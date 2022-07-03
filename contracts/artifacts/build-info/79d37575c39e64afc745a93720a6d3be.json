@@ -1,0 +1,282 @@
+{
+	"id": "79d37575c39e64afc745a93720a6d3be",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.26",
+	"solcLongVersion": "0.4.26+commit.4563c3fc",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/ERC20.sol": {
+				"content": "pragma solidity ^0.4.0;\r\n\r\n\r\ninterface ERC20 {}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/ERC20.sol": {
+				"ERC20": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/ERC20.sol\":29:47  interface ERC20 {} */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x0\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"contracts/ERC20.sol\":29:47  interface ERC20 {} */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x0\n  codecopy\n  0x0\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/ERC20.sol\":29:47  interface ERC20 {} */\n      mstore(0x40, 0x80)\n      0x0\n      dup1\n      revert\n\n    auxdata: 0xa165627a7a72305820bf058252f252419e6b6d5048ec44cd5920f8d518319d170819d2d49cec729de60029\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820bf058252f252419e6b6d5048ec44cd5920f8d518319d170819d2d49cec729de60029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x35 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xbf SDIV DUP3 MSTORE CALLCODE MSTORE COINBASE SWAP15 PUSH12 0x6D5048EC44CD5920F8D51831 SWAP14 OR ADDMOD NOT 0xd2 0xd4 SWAP13 0xec PUSH19 0x9DE60029000000000000000000000000000000 ",
+							"sourceMap": "29:18:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;29:18:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fd00a165627a7a72305820bf058252f252419e6b6d5048ec44cd5920f8d518319d170819d2d49cec729de60029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xbf SDIV DUP3 MSTORE CALLCODE MSTORE COINBASE SWAP15 PUSH12 0x6D5048EC44CD5920F8D51831 SWAP14 OR ADDMOD NOT 0xd2 0xd4 SWAP13 0xec PUSH19 0x9DE60029000000000000000000000000000000 ",
+							"sourceMap": "29:18:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "10600",
+								"executionCost": "66",
+								"totalCost": "10666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "POP"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "DUP1"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 29,
+									"end": 47,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a165627a7a72305820bf058252f252419e6b6d5048ec44cd5920f8d518319d170819d2d49cec729de60029",
+									".code": [
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "DUP1"
+										},
+										{
+											"begin": 29,
+											"end": 47,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/ERC20.sol\":\"ERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ERC20.sol\":{\"keccak256\":\"0xe4b3363e5b13bf56a4b79a4bd2b780ee806f6567544a6366cf0ee10c45d27996\",\"urls\":[\"bzzr://c06b00f17cf28535423b82c9c767666e93f2683bdb68fe952337289cb321da4d\"]}},\"version\":1}",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/ERC20.sol": {
+				"ast": {
+					"absolutePath": "contracts/ERC20.sol",
+					"exportedSymbols": {
+						"ERC20": [
+							2
+						]
+					},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "ERC20",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "29:18:0"
+						}
+					],
+					"src": "0:47:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

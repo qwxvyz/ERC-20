@@ -1,0 +1,449 @@
+{
+	"id": "b4288f903e0a6bd012bb50d7e202ef91",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.26",
+	"solcLongVersion": "0.4.26+commit.4563c3fc",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/ERC223.sol": {
+				"content": "pragma solidity ^0.4.0;\r\n\r\ninterface ERC223 {\r\n    function transfer(address _to, uint _value, bytes _data) public returns (bool);\r\n    event Transfer(address indexed from, address indexed to, uint value, bytes indexed data);\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/ERC223.sol": {
+				"ERC223": {
+					"abi": [
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "_to",
+									"type": "address"
+								},
+								{
+									"name": "_value",
+									"type": "uint256"
+								},
+								{
+									"name": "_data",
+									"type": "bytes"
+								}
+							],
+							"name": "transfer",
+							"outputs": [
+								{
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"anonymous": false,
+							"inputs": [
+								{
+									"indexed": true,
+									"name": "from",
+									"type": "address"
+								},
+								{
+									"indexed": true,
+									"name": "to",
+									"type": "address"
+								},
+								{
+									"indexed": false,
+									"name": "value",
+									"type": "uint256"
+								},
+								{
+									"indexed": true,
+									"name": "data",
+									"type": "bytes"
+								}
+							],
+							"name": "Transfer",
+							"type": "event"
+						}
+					],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"transfer(address,uint256,bytes)": "be45fd62"
+						}
+					},
+					"metadata": "",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ERC223.sol:4:5: Warning: Functions in interfaces should be declared external.\n    function transfer(address _to, uint _value, bytes _data) public returns (bool);\r\n    ^-----------------------------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 130,
+					"file": "contracts/ERC223.sol",
+					"start": 51
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/ERC223.sol": {
+				"ast": {
+					"absolutePath": "contracts/ERC223.sol",
+					"exportedSymbols": {
+						"ERC223": [
+							23
+						]
+					},
+					"id": 24,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": null,
+							"fullyImplemented": false,
+							"id": 23,
+							"linearizedBaseContracts": [
+								23
+							],
+							"name": "ERC223",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": null,
+									"documentation": null,
+									"id": 12,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "transfer",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"name": "_to",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "69:11:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "69:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 5,
+												"name": "_value",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "82:11:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "82:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 7,
+												"name": "_data",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "95:11:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_memory_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "95:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "68:39:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 11,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 10,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "124:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 9,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "124:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "123:6:0"
+									},
+									"scope": 23,
+									"src": "51:79:0",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"anonymous": false,
+									"documentation": null,
+									"id": 22,
+									"name": "Transfer",
+									"nodeType": "EventDefinition",
+									"parameters": {
+										"id": 21,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 14,
+												"indexed": true,
+												"name": "from",
+												"nodeType": "VariableDeclaration",
+												"scope": 22,
+												"src": "151:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 13,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "151:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 16,
+												"indexed": true,
+												"name": "to",
+												"nodeType": "VariableDeclaration",
+												"scope": 22,
+												"src": "173:18:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 15,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "173:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 18,
+												"indexed": false,
+												"name": "value",
+												"nodeType": "VariableDeclaration",
+												"scope": 22,
+												"src": "193:10:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 17,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "193:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 20,
+												"indexed": true,
+												"name": "data",
+												"nodeType": "VariableDeclaration",
+												"scope": 22,
+												"src": "205:18:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_memory_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 19,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "205:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "150:74:0"
+									},
+									"src": "136:89:0"
+								}
+							],
+							"scope": 24,
+							"src": "27:201:0"
+						}
+					],
+					"src": "0:228:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/token.sol": "Token"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/token.sol": {
+			"keccak256": "0xc117f5fae2f1641b4a4fd4fb595ef5817623ec5e8dff958ecdc7ee3cc44503b4",
+			"urls": [
+				"bzzr://81686cfb0201089dd3e2cadd2b2481a13e900f6d3882e9e10e6e78e9c6604b92"
+			]
+		}
+	},
+	"version": 1
+}

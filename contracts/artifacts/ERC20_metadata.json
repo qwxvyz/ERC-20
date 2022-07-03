@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC20.sol": "ERC20"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC20.sol": {
+			"keccak256": "0x17763b0e70c560595eaed7a6e2ff9eebad1379a376f042a141a10edf2b1b28cf",
+			"urls": [
+				"bzzr://9849171ebe674f179121fd0bda343086e4a88e5dd2ab21ff82419cd8da396c09"
+			]
+		}
+	},
+	"version": 1
+}

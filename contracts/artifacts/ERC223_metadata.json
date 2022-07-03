@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC223.sol": "ERC223"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC223.sol": {
+			"keccak256": "0xf0d8f2aee46fe5a23c93cdc9ec7e12f6710e16dee8c64c41c779e6b23d7ae0f2",
+			"urls": [
+				"bzzr://dd4d2f8a59a9b7c62d52cf67c236d9feabe00c55e230acbaf7d5366feaa1f54e"
+			]
+		}
+	},
+	"version": 1
+}
